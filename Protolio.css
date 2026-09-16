@@ -244,15 +244,61 @@ section { position: relative; z-index: 1; padding: 6rem 4rem; }
 .badges { display: flex; gap: 0.4rem; flex-wrap: wrap; }
 
 /* EDUCATION */
-.edu-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 1px; background: var(--border); border: 2px solid var(--border); }
-.edu-card { background: var(--card); padding: 2rem; transition: background 0.2s; }
-.edu-card:hover { background: #161625; }
-.edu-degree { font-family: 'Syne', sans-serif; font-size: 1rem; font-weight: 700; margin-bottom: 0.4rem; cursor: pointer; transition: color 0.2s; }
-.edu-card:hover .edu-degree { color: var(--accent); }
-.edu-institution { font-size: 0.8rem; color: var(--accent2); margin-bottom: 0.6rem; }
-.edu-meta { display: flex; gap: 1rem; flex-wrap: wrap; }
-.edu-tag { font-size: 0.7rem; color: var(--muted); border: 1px solid var(--border); padding: 0.2rem 0.6rem; border-radius: 2px; }
-.edu-cgpa { color: var(--accent); border-color: rgba(232,255,71,0.3); }
+.edu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--border);
+    border: 2px solid var(--border);
+}
+
+.edu-card {
+    background: var(--card);
+    padding: 2rem;
+    transition: background 0.2s;
+}
+
+.edu-card:hover {
+    background: #161625;
+}
+
+.edu-degree {
+    font-family: 'Syne', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.edu-card:hover .edu-degree {
+    color: var(--accent);
+}
+
+.edu-institution {
+    font-size: 0.8rem;
+    color: var(--accent2);
+    margin-bottom: 0.6rem;
+}
+
+.edu-meta {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.edu-tag {
+    font-size: 0.7rem;
+    color: var(--muted);
+    border: 1px solid var(--border);
+    padding: 0.2rem 0.6rem;
+    border-radius: 2px;
+}
+
+.edu-cgpa {
+    color: var(--accent);
+    border-color: rgba(232, 255, 71, 0.3);
+}
 
 /* CONTACT */
 .contact-section { background: var(--card); border: 1px solid var(--border); padding: 4rem; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
